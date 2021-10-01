@@ -11,8 +11,8 @@ function check() {
     console.log("Q "+q);
     var sp = parseInt(input3.value);
     console.log("SP "+sp);
-    if ((cp == "") || (q == "") || (sp == "")) {
-        alert("OOPS!! something went wrong");
+    if ((cp <= 0) || (q <= 0) || (sp <= 0)) {
+        output.innerText ="Error in input";
     }
     else {
         if ((cp > 0) && (q > 0) && (sp > 0)) {
@@ -35,9 +35,6 @@ function check() {
                     output.innerText = "No Pain No Gain";
                 }
             }
-        }
-        else {
-            alert("Value should be negative or zero which is not possible");
         }
     }
 }
