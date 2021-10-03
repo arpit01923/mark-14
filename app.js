@@ -19,17 +19,17 @@ function check() {
             if (cp > sp) {
                 var loss = (cp - sp) * q;
                 console.log("Loss "+loss);
-                var lossper = (loss / cp*q) * 100;
+                var lossper = (loss / cp) * 100;
                 console.log("Loss Percentage "+lossper);
-                output.innerText = "Loss: " + loss + " Loss percent: " + lossper + "%";
+                output.innerText = "The loss is "+loss+" and percentage is "+lossper+"%";
             }
             else {
                 if (cp < sp) {
                     var profit = (sp - cp) * q;
                     console.log("Profit "+profit);
-                    var profitper = (profit / cp*q) * 100;
+                    var profitper = (profit / cp) * 100;
                     console.log("Profit Percent "+profitper)
-                    output.innerText = "Profit: " + profit + " Profit percent: " + profitper + "%";
+                    output.innerText = "Hey the profit is "+profit+" and percentage is "+profitper+"%";
                 }
                 else {
                     output.innerText = "No Pain No Gain";
